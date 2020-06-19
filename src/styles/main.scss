@@ -6,3 +6,30 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.gallery {
+  margin: 150px auto;
+  max-width: 560px;
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 570px;
+  }
+
+  &__large-img {
+    border: 5px solid #fff;
+    box-shadow: 0 0 2px 0 rgb(0, 0, 0, 0.2);
+    &:hover {
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__img {
+    border: 5px solid #fff;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+    &:hover {
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    }
+  }
+}
